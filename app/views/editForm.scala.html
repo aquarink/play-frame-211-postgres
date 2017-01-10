@@ -13,8 +13,9 @@
         <fieldset>
         
             @inputText(computerForm("name"), '_label -> "Computer name")
-            @inputText(computerForm("introduced"), '_label -> "Introduced date")
-            @inputText(computerForm("discontinued"), '_label -> "Discontinued date")
+            @inputText(computerForm("introduced"), 'id -> "dp2", '_label -> "Introduced date")
+            @inputText(computerForm("discontinued"), 'id -> "dp1", '_label -> "Discontinued date")
+            @inputText(computerForm("description"), '_label -> "Description")
             
             @select(
                 computerForm("company.id"), 

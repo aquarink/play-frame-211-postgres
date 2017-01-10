@@ -59,6 +59,9 @@
   <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/local/org.avaje.ebeanorm/avaje-ebeanorm-agent/3.1.1/jars/avaje-ebeanorm-agent.jar" kind="lib"></classpathentry>
   <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/local/org.avaje.ebeanorm/avaje-ebeanorm-server/3.1.2/jars/avaje-ebeanorm-server.jar" kind="lib"></classpathentry>
   <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/local/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/jars/hibernate-jpa-2.0-api.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/cache/be.objectify/deadbolt-java_2.10/jars/deadbolt-java_2.10-2.1.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/cache/be.objectify/deadbolt-core_2.10/jars/deadbolt-core_2.10-2.1.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/cache/postgresql/postgresql/jars/postgresql-9.1-901.jdbc4.jar" kind="lib"></classpathentry>
   <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/local/play/play-test_2.10/2.1.1/jars/play-test_2.10.jar" kind="lib"></classpathentry>
   <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/local/junit/junit-dep/4.10/jars/junit-dep.jar" kind="lib"></classpathentry>
   <classpathentry path="/Users/pebri/Documents/play-2.1.1/repository/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar" kind="lib"></classpathentry>

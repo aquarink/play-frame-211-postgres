@@ -1,12 +1,12 @@
 package models;
 
 import java.util.*;
+
 import javax.persistence.*;
 
 import play.db.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
-
 
 import com.avaje.ebean.*;
 
@@ -26,7 +26,10 @@ public class Company extends Model {
     /**
      * Generic query helper for entity Company with id Long
      */
-    public static Model.Finder<Long,Company> find = new Model.Finder<Long,Company>(Long.class, Company.class);
+    public static Finder<Long,Company> find = new Finder<Long,Company>(Long.class, Company.class);
+    
+    
+    
 
     public static Map<String,String> options() {
         LinkedHashMap<String,String> options = new LinkedHashMap<String,String>();
@@ -34,6 +37,17 @@ public class Company extends Model {
             options.put(c.id.toString(), c.name);
         }
         return options;
+    }
+    
+    public static Page<Company> page(int page, int pageSize, String sortBy, String order, String filter) {
+        return 
+            find.where()
+                .ilike("name", "%" + filter + "%")
+                .orderBy(sortBy + " " + order)
+                .fetch("company")
+                .findPagingList(pageSize)
+                .setFetchAhead(false)
+                .getPage(page);
     }
 
 }

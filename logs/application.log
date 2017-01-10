@@ -1,9 +1,9 @@
-2017-01-10 14:39:29,100 - [INFO] - from play in main 
+2017-01-10 16:15:36,164 - [INFO] - from play in main 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9191
 
-2017-01-10 14:39:42,244 - [INFO] - from play in New I/O worker #1 
+2017-01-10 16:15:43,614 - [INFO] - from play in New I/O worker #1 
 database [default] connected at jdbc:postgresql://localhost:5432/belajars
 
-2017-01-10 14:39:42,894 - [INFO] - from play in New I/O worker #1 
+2017-01-10 16:15:44,401 - [INFO] - from play in New I/O worker #1 
 Application started (Dev)
 

@@ -48,7 +48,7 @@ Seq[Any](format.raw/*1.34*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Jan 10 13:48:46 WIB 2017
+                    DATE: Tue Jan 10 16:14:43 WIB 2017
                     SOURCE: /Users/pebri/Documents/play-2.1.1/play-postgres/app/views/twitterBootstrapInput.scala.html
                     HASH: 6bc94c9dc0aa2d45412ea780b2e3cd9489053c7e
                     MATRIX: 753->1|862->33|891->193|949->216|979->238|1018->240|1055->246|1110->266|1126->274|1150->277|1188->280|1204->288|1231->294|1308->336|1324->344|1351->350|1423->386|1440->394|1483->415

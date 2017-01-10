@@ -41,30 +41,31 @@ Seq[Any](format.raw/*1.42*/("""
         <fieldset>
         
             """),_display_(Seq[Any](/*15.14*/inputText(computerForm("name"), '_label -> "Computer name"))),format.raw/*15.73*/("""
-            """),_display_(Seq[Any](/*16.14*/inputText(computerForm("introduced"), '_label -> "Introduced date"))),format.raw/*16.81*/("""
-            """),_display_(Seq[Any](/*17.14*/inputText(computerForm("discontinued"), '_label -> "Discontinued date"))),format.raw/*17.85*/("""
+            """),_display_(Seq[Any](/*16.14*/inputText(computerForm("introduced"), 'id -> "dp2", '_label -> "Introduced date"))),format.raw/*16.95*/("""
+            """),_display_(Seq[Any](/*17.14*/inputText(computerForm("discontinued"), 'id -> "dp1", '_label -> "Discontinued date"))),format.raw/*17.99*/("""
+            """),_display_(Seq[Any](/*18.14*/inputText(computerForm("description"), '_label -> "Description"))),format.raw/*18.78*/("""
             
-            """),_display_(Seq[Any](/*19.14*/select(
+            """),_display_(Seq[Any](/*20.14*/select(
                 computerForm("company.id"), 
                 options(Company.options), 
                 '_label -> "Company", '_default -> "-- Choose a company --",
                 '_showConstraints -> false
-            ))),format.raw/*24.14*/("""
+            ))),format.raw/*25.14*/("""
         
         </fieldset>
         
         <div class="actions">
             <input type="submit" value="Save this computer" class="btn primary"> or 
-            <a href=""""),_display_(Seq[Any](/*30.23*/routes/*30.29*/.Application.list())),format.raw/*30.48*/("""" class="btn">Cancel</a> 
+            <a href=""""),_display_(Seq[Any](/*31.23*/routes/*31.29*/.Application.list())),format.raw/*31.48*/("""" class="btn">Cancel</a> 
         </div>
         
-    """)))})),format.raw/*33.6*/("""
+    """)))})),format.raw/*34.6*/("""
     
-    """),_display_(Seq[Any](/*35.6*/form(routes.Application.delete(id), 'class -> "topRight")/*35.63*/ {_display_(Seq[Any](format.raw/*35.65*/("""
+    """),_display_(Seq[Any](/*36.6*/form(routes.Application.delete(id), 'class -> "topRight")/*36.63*/ {_display_(Seq[Any](format.raw/*36.65*/("""
         <input type="submit" value="Delete this computer" class="btn danger">
-    """)))})),format.raw/*37.6*/("""
+    """)))})),format.raw/*38.6*/("""
     
-""")))})),format.raw/*39.2*/("""
+""")))})),format.raw/*40.2*/("""
 """))}
     }
     
@@ -77,11 +78,11 @@ Seq[Any](format.raw/*1.42*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Jan 10 13:48:46 WIB 2017
+                    DATE: Tue Jan 10 16:14:42 WIB 2017
                     SOURCE: /Users/pebri/Documents/play-2.1.1/play-postgres/app/views/editForm.scala.html
-                    HASH: 5de231189f456ec9a95d442450306433bd90a50c
-                    MATRIX: 739->1|864->62|896->86|980->41|1008->60|1036->140|1074->144|1085->148|1123->150|1201->193|1245->228|1285->230|1372->281|1453->340|1503->354|1592->421|1642->435|1735->506|1798->533|2049->762|2261->938|2276->944|2317->963|2403->1018|2449->1029|2515->1086|2555->1088|2670->1172|2708->1179
-                    LINES: 26->1|29->5|29->5|30->1|32->4|33->5|35->7|35->7|35->7|39->11|39->11|39->11|43->15|43->15|44->16|44->16|45->17|45->17|47->19|52->24|58->30|58->30|58->30|61->33|63->35|63->35|63->35|65->37|67->39
+                    HASH: 68d25239a07c59ae1c1339ba9874b5fbd3e8287f
+                    MATRIX: 739->1|864->62|896->86|980->41|1008->60|1036->140|1074->144|1085->148|1123->150|1201->193|1245->228|1285->230|1372->281|1453->340|1503->354|1606->435|1656->449|1763->534|1813->548|1899->612|1962->639|2213->868|2425->1044|2440->1050|2481->1069|2567->1124|2613->1135|2679->1192|2719->1194|2834->1278|2872->1285
+                    LINES: 26->1|29->5|29->5|30->1|32->4|33->5|35->7|35->7|35->7|39->11|39->11|39->11|43->15|43->15|44->16|44->16|45->17|45->17|46->18|46->18|48->20|53->25|59->31|59->31|59->31|62->34|64->36|64->36|64->36|66->38|68->40
                     -- GENERATED --
                 */
             
