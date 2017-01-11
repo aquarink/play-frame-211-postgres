@@ -1,6 +1,6 @@
 // @SOURCE:/Users/pebri/Documents/play-2.1.1/play-postgres/conf/routes
-// @HASH:eac6d90676c3aae2ce832d9eba262203a54f7939
-// @DATE:Tue Jan 10 16:14:40 WIB 2017
+// @HASH:709e89846f3de2f32307179dee175f5e04fbd830
+// @DATE:Wed Jan 11 16:48:23 WIB 2017
 
 package controllers;
 

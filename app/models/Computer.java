@@ -15,7 +15,12 @@ import com.avaje.ebean.*;
 @Entity 
 public class Computer extends Model {
 
-    @Id
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
     public Long id;
     
     @Constraints.Required

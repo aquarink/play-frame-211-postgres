@@ -1,9 +1,255 @@
-2017-01-10 16:15:36,164 - [INFO] - from play in main 
+2017-01-11 16:45:27,618 - [INFO] - from play in main 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9191
 
-2017-01-10 16:15:43,614 - [INFO] - from play in New I/O worker #1 
+2017-01-11 16:45:34,891 - [INFO] - from play in New I/O worker #1 
 database [default] connected at jdbc:postgresql://localhost:5432/belajars
 
-2017-01-10 16:15:44,401 - [INFO] - from play in New I/O worker #1 
+2017-01-11 16:45:35,479 - [INFO] - from play in New I/O worker #1 
 Application started (Dev)
+
+2017-01-11 16:45:35,816 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+--------------------------------------------------
+
+2017-01-11 16:45:35,817 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+URL: http://localhost/json-list.html and PARAMETER: 
+
+2017-01-11 16:45:35,817 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+--------------------------------------------------
+
+2017-01-11 16:45:35,880 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+Http Response Code     : 200
+
+2017-01-11 16:45:35,881 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+---------------------HASIL------------------------
+
+2017-01-11 16:45:35,881 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+Fund (json) Data = {"jsonlist":[	{	    "userId": 2,	    "id": 2,	    "title": "2 sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",	    "body": "2 quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"	},	{	    "userId": 3,	    "id": 3,	    "title": "3 sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",	    "body": "3 quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"	},	{	    "userId": 4,	    "id": 4,	    "title": "4 sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",	    "body": "4 quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"	},	{	    "userId": 5,	    "id": 5,	    "title": "5 sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",	    "body": "5 quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"	}]}
+
+2017-01-11 16:45:35,881 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+--------------------------------------------------
+
+2017-01-11 16:48:35,414 - [INFO] - from play in New I/O worker #3 
+database [default] connected at jdbc:postgresql://localhost:5432/belajars
+
+2017-01-11 16:48:35,604 - [INFO] - from play in New I/O worker #3 
+Application started (Dev)
+
+2017-01-11 16:48:35,616 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+--------------------------------------------------
+
+2017-01-11 16:48:35,617 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+URL: http://localhost/json-single.html and PARAMETER: 
+
+2017-01-11 16:48:35,617 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+--------------------------------------------------
+
+2017-01-11 16:48:35,637 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+Http Response Code     : 200
+
+2017-01-11 16:48:35,637 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+---------------------HASIL------------------------
+
+2017-01-11 16:48:35,637 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+Fund (json) Data = {    "userId": 1,    "id": 1,    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",    "body": "quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"}
+
+2017-01-11 16:48:35,637 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+--------------------------------------------------
+
+2017-01-11 16:48:35,772 - [ERROR] - from application in play-internal-execution-context-2 
+
+
+! @72k83haeb - Internal server error, for (GET) [/companysingle] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:289) ~[play_2.10.jar:2.1.1]
+	at play.api.DefaultApplication.handleError(Application.scala:383) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anon$2$$anonfun$handle$1.apply(PlayDefaultUpstreamHandler.scala:144) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anon$2$$anonfun$handle$1.apply(PlayDefaultUpstreamHandler.scala:140) [play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) [play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend1$1.apply(Promise.scala:113) [play_2.10.jar:2.1.1]
+	at play.api.libs.concurrent.PlayPromise$$anonfun$extend$1$$anonfun$apply$1.apply(Promise.scala:104) [play_2.10.jar:2.1.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_71]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_71]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_71]
+java.lang.NullPointerException: null
+	at views.html.companysingle$.apply(companysingle.template.scala:84) ~[na:na]
+	at views.html.companysingle$.render(companysingle.template.scala:115) ~[na:na]
+	at views.html.companysingle.render(companysingle.template.scala) ~[na:na]
+	at controllers.Compctrl.companysingle(Compctrl.java:83) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:121) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:121) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$6$$anon$2.invocation(Router.scala:164) ~[play_2.10.jar:2.1.1]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:345) ~[play_2.10.jar:2.1.1]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:31) ~[play_2.10.jar:2.1.1]
+	at play.core.j.JavaAction$$anon$2.apply(JavaAction.scala:74) ~[play_2.10.jar:2.1.1]
+	at play.core.j.JavaAction$$anon$2.apply(JavaAction.scala:73) ~[play_2.10.jar:2.1.1]
+	at play.libs.F$Promise$PromiseActor.onReceive(F.java:420) ~[play_2.10.jar:2.1.1]
+	at akka.actor.UntypedActor$$anonfun$receive$1.applyOrElse(UntypedActor.scala:159) ~[akka-actor_2.10.jar:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:425) ~[akka-actor_2.10.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:386) ~[akka-actor_2.10.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:230) ~[akka-actor_2.10.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:212) ~[akka-actor_2.10.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$MailboxExecutionTask.exec(AbstractDispatcher.scala:502) ~[akka-actor_2.10.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:262) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:975) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1478) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104) ~[scala-library.jar:na]
+
+2017-01-11 16:49:13,531 - [ERROR] - from application in New I/O worker #3 
+
+
+! @72k83jeal - Internal server error, for (GET) [/companysingle] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error[error: method render in class companysingle cannot be applied to given types;]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:346) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:346) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:344) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:374) ~[na:na]
+	at sbt.PlayReloader$$anon$2.reload(PlayReloader.scala:344) ~[na:na]
+	at play.core.ReloadableApplication.get(ApplicationProvider.scala:98) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$class.sendHandler$1(Server.scala:56) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:88) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:87) [play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) [scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:87) [play_2.10.jar:2.1.1]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:34) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at scala.util.Either.fold(Either.scala:98) [scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:109) [play_2.10.jar:2.1.1]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_71]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_71]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_71]
+
+2017-01-11 16:50:02,175 - [ERROR] - from application in New I/O worker #3 
+
+
+! @72k83m89k - Internal server error, for (GET) [/companylist] ->
+
+sbt.PlayExceptions$CompilationException: Compilation error[error: method render in class companysingle cannot be applied to given types;]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15$$anonfun$apply$16.apply(PlayReloader.scala:349) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:349) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2$$anonfun$apply$15.apply(PlayReloader.scala:346) ~[na:na]
+	at scala.Option.map(Option.scala:133) ~[scala-library.jar:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:346) ~[na:na]
+	at sbt.PlayReloader$$anon$2$$anonfun$reload$2.apply(PlayReloader.scala:344) ~[na:na]
+	at scala.Either$LeftProjection.map(Either.scala:374) ~[na:na]
+	at sbt.PlayReloader$$anon$2.reload(PlayReloader.scala:344) ~[na:na]
+	at play.core.ReloadableApplication.get(ApplicationProvider.scala:98) ~[play_2.10.jar:2.1.1]
+	at play.core.server.Server$class.sendHandler$1(Server.scala:56) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:88) [play_2.10.jar:2.1.1]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:87) [play_2.10.jar:2.1.1]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) [scala-library.jar:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:87) [play_2.10.jar:2.1.1]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:34) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$6.apply(PlayDefaultUpstreamHandler.scala:115) [play_2.10.jar:2.1.1]
+	at scala.util.Either.fold(Either.scala:98) [scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:109) [play_2.10.jar:2.1.1]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:787) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:560) [netty.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:555) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:107) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:88) [netty.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_71]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_71]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_71]
+
+2017-01-11 16:51:28,719 - [INFO] - from play in New I/O worker #3 
+database [default] connected at jdbc:postgresql://localhost:5432/belajars
+
+2017-01-11 16:51:28,904 - [INFO] - from play in New I/O worker #3 
+Application started (Dev)
+
+2017-01-11 16:51:28,916 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+--------------------------------------------------
+
+2017-01-11 16:51:28,917 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+URL: http://localhost/json-list.html and PARAMETER: 
+
+2017-01-11 16:51:28,917 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+--------------------------------------------------
+
+2017-01-11 16:51:28,935 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Http Response Code     : 200
+
+2017-01-11 16:51:28,936 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+---------------------HASIL------------------------
+
+2017-01-11 16:51:28,936 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Fund (json) Data = {"jsonlist":[	{	    "userId": 2,	    "id": 2,	    "title": "2 sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",	    "body": "2 quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"	},	{	    "userId": 3,	    "id": 3,	    "title": "3 sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",	    "body": "3 quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"	},	{	    "userId": 4,	    "id": 4,	    "title": "4 sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",	    "body": "4 quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"	},	{	    "userId": 5,	    "id": 5,	    "title": "5 sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",	    "body": "5 quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"	}]}
+
+2017-01-11 16:51:28,936 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+--------------------------------------------------
+
+2017-01-11 16:51:36,944 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+--------------------------------------------------
+
+2017-01-11 16:51:36,944 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+URL: http://localhost/json-single.html and PARAMETER: 
+
+2017-01-11 16:51:36,946 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+--------------------------------------------------
+
+2017-01-11 16:51:36,964 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Http Response Code     : 200
+
+2017-01-11 16:51:36,965 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+---------------------HASIL------------------------
+
+2017-01-11 16:51:36,965 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Fund (json) Data = {    "userId": 1,    "id": 1,    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit xxxxxx",    "body": "quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnnostrum rerum est autem sunt rem eveniet architecto"}
+
+2017-01-11 16:51:36,965 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+--------------------------------------------------
 

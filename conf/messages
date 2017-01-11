@@ -2,4 +2,6 @@
 
 computers.list.title={0,choice,0#No computers|1#One computer|1<{0,number,integer} computers} found
 
+company.companylist.title={0,choice,0#No company|1#One company|1<{0,number,integer} company} found
+
 

@@ -1,0 +1,73 @@
+@(currentPage: models.Jsondatalist, currentSortBy: String, currentOrder: String, currentFilter: String)
+
+@****************************************
+* Helper generating navigation links    *
+****************************************@
+@link(newPage:Int, newSortBy:String) = @{
+    
+    var sortBy = currentSortBy
+    var order = currentOrder
+    
+    if(newSortBy != null) {
+        sortBy = newSortBy
+        if(currentSortBy == newSortBy) {
+            if(currentOrder == "asc") {
+                order = "desc"
+            } else {
+                order = "asc"
+            }
+        } else {
+            order = "asc"
+        }
+    }
+    
+    // Generate the link
+    routes.Compctrl.companysingle(newPage, sortBy, order, currentFilter)
+    
+}
+
+@**********************************
+* Helper generating table headers *
+***********************************@
+@header(key:String, title:String) = {
+    <th class="@key.replace(".","_") header @if(currentSortBy == key) @{if(currentOrder == "asc") "headerSortDown" else "headerSortUp"}">
+        <a href="@link(0, key)">@title</a>
+    </th>
+}
+
+@main {
+    
+    
+
+    @if(flash.containsKey("success")) {
+        <div class="alert-message warning">
+            <strong>Done!</strong> @flash.get("success")
+        </div>
+    } 
+
+    <div id="actions">
+        
+        <form action="@link(0, "name")" method="GET">
+            <input type="search" id="searchbox" name="f" value="@currentFilter" placeholder="Filter by company name...">
+            <input type="submit" id="searchsubmit" value="Filter by name" class="btn primary">
+        </form>
+        
+        <a class="btn success" id="add" href="@routes.Compctrl.companycreate()">Add a new company</a>
+        
+    </div>
+
+        <table class="computers zebra-striped">
+            <thead>
+                <tr>
+                    @header("name", "Company name")
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td><a href="#">@currentPage.getJsonlist</a></td>
+                    </tr>
+            </tbody>
+        </table>
+
+
+}

@@ -1,2 +1,14 @@
 start
 run
+clean
+compile
+run 9191
+clean
+compile
+clean
+compile
+clean
+compile
+clean
+compile
+run 9191

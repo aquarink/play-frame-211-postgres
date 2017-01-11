@@ -5,7 +5,6 @@ import java.util.*;
 import javax.persistence.*;
 
 import play.db.ebean.*;
-import play.data.format.*;
 import play.data.validation.*;
 
 import com.avaje.ebean.*;
@@ -17,7 +16,13 @@ import com.avaje.ebean.*;
 @Entity 
 public class Company extends Model {
 
-    @Id
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+    @Column(name="id")
     public Long id;
     
     @Constraints.Required
@@ -27,8 +32,6 @@ public class Company extends Model {
      * Generic query helper for entity Company with id Long
      */
     public static Finder<Long,Company> find = new Finder<Long,Company>(Long.class, Company.class);
-    
-    
     
 
     public static Map<String,String> options() {
@@ -44,11 +47,11 @@ public class Company extends Model {
             find.where()
                 .ilike("name", "%" + filter + "%")
                 .orderBy(sortBy + " " + order)
-                .fetch("company")
                 .findPagingList(pageSize)
                 .setFetchAhead(false)
                 .getPage(page);
     }
-
+    
+    
 }
 

@@ -1,14 +1,11 @@
 package controllers;
 
-import java.util.*;
+import org.codehaus.jackson.JsonNode;
 
 import play.mvc.*;
 import play.data.*;
 import static play.data.Form.*;
-import play.*;
-
 import views.html.*;
-
 import models.*;
 
 /**
@@ -108,6 +105,18 @@ public class Application extends Controller {
         return GO_HOME;
     }
     
-
+    public static Result jsons() {
+    	  JsonNode json = request().body().asJson();
+    	  if(json == null) {
+    	    return badRequest("Expecting Json data");
+    	  } else {
+    	    String name = json.findPath("name").getTextValue();
+    	    if(name == null) {
+    	      return badRequest("Missing parameter [name]");
+    	    } else {
+    	      return ok("Hello " + name);
+    	    }
+    	  }
+    	}
 }
             
